@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Favorite Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .navbar-dark .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;..");
+        }
+
+        .carousel img {
+            max-height: 510px;
+            max-width: 1010px;
+            margin: 0 auto;
+        }
+
+        .marketing .col-lg-4 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .marketing .col-lg-4 p {
+            margin-right: .75rem;
+            margin-left: .75rem;
+        }
+
+        .service-icon {
+            background: #f14523;
+            padding: 44px;
+            border-radius: 50%;
+            transition: 0.5s;
+            border: 1px solid #f14523;
+            width: 150px;
+            height: 150px;
+        }
+
+        .service-icon i {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .service-item .service-icon:hover {
+            background: #fff;
+        }
+
+        .service-item .service-icon:hover svg {
+            fill: #f14523;
+        }
+
+        .card_img {
+            transition: all 300ms;
+            border: none;
+        }
+
+        .card_img:hover {
+            opacity: 0.8;
+            transform: scale(1.10);
+        }
+
+        .fondoBack {
+            background: #f14523;
+        }
+
+        .breadcrumb {
+            display: flex;
+            flex-wrap: wrap;
+            padding: .5rem 1rem;
+            margin-bottom: 1rem;
+            list-style: none;
+            border-radius: .25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top fondoBack">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="index.html"><img src="img/Empresa.png" width="40%" height="50%"
+                    alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-dark navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="favorite_food.html">Favorite food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mt-5 pt-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            </ol>
+        </nav>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/hamburguesarmk.jpg" class="d-block w-100" alt="burguer1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/morelia.jpg" class="d-block w-100" alt="morelia">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/hamburguesasrmk.jpg" class="d-block w-100" alt="burguer2">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="row col-lg-10 offset-lg-1 mt-5">
+            <a class="col-6 col-lg-4 marketing service-item text-decoration-none" href="favorite_food.html">
+                <div class="container rounded-circle" align="center">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                            class="bi bi-egg-fried text-light" viewBox="0 0 16 16">
+                            <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            <path
+                                d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z" />
+                        </svg>
+                    </div>
+                </div>
+                <br>
+                <h2 class="fw-normal text-center text-dark">Food</h2>
+                <!-- <p class="mr-2 ml-2 text-center">Some representative placeholder content for the three columns of text
+                    below the carousel. This is the first column.</p> -->
+            </a><!-- /.col-lg-4 -->
+            <a class="col-6 col-lg-4 marketing service-item text-decoration-none" href="#recipes">
+                <div class="container" align="center">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                            class="text-light">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M256 496c132.5 0 240-107.5 240-240S388.5 16 256 16S16 123.5 16 256s107.5 240 240 240zM235.3 76.7L256 97.4l20.7-20.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6L278.6 120 324 165.4 357.4 132l-16.7-16.7c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L380 109.4l8.7-8.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6l-8.7 8.7 16.7 16.7c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0L380 154.6 346.6 188 392 233.4l20.7-20.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6L414.6 256l20.7 20.7c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0L392 278.6 346.6 324 380 357.4l16.7-16.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6L402.6 380l8.7 8.7c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0l-8.7-8.7-16.7 16.7c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6L357.4 380 324 346.6 278.6 392l20.7 20.7c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0L256 414.6l-20.7 20.7c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6L233.4 392 188 346.6 154.6 380l16.7 16.7c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0L132 402.6l-8.7 8.7c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l8.7-8.7L92.7 363.3c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L132 357.4 165.4 324 120 278.6 99.3 299.3c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6L97.4 256 76.7 235.3c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L120 233.4 165.4 188 132 154.6l-16.7 16.7c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6L109.4 132l-8.7-8.7c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0l8.7 8.7 16.7-16.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6L154.6 132 188 165.4 233.4 120 212.7 99.3c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0zM210.6 188L256 233.4 301.4 188 256 142.6 210.6 188zm68 68L324 301.4 369.4 256 324 210.6 278.6 256zM256 278.6L210.6 324 256 369.4 301.4 324 256 278.6zM233.4 256L188 210.6 142.6 256 188 301.4 233.4 256z" />
+                        </svg>
+                    </div>
+                </div>
+                <br>
+
+                <h2 class="fw-normal text-center text-dark">Recipes</h2>
+                <!-- <p class="mr-2 ml-2 text-center">Another exciting bit of representative placeholder content. This time,
+                    we've moved on to the second column.</p> -->
+
+            </a><!-- /.col-lg-4 -->
+            <a class="col-6 col-lg-4 marketing service-item text-decoration-none" href="#drinks">
+                <div class="container" align="center">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                            class="text-light">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M393.4 9.4c12.5-12.5 32.8-12.5 45.3 0l64 64c12.5 12.5 12.5 32.8 0 45.3c-11.8 11.8-30.7 12.5-43.2 1.9l-9.5 9.5-48.8 48.8c-9.2 9.2-11.5 22.9-8.6 35.6c9.4 40.9-1.9 85.6-33.8 117.5L197.3 493.3c-25 25-65.5 25-90.5 0l-88-88c-25-25-25-65.5 0-90.5L180.2 153.3c31.9-31.9 76.6-43.1 117.5-33.8c12.6 2.9 26.4 .5 35.5-8.6l48.8-48.8 9.5-9.5c-10.6-12.6-10-31.4 1.9-43.2zM99.3 347.3l65.4 65.4c6.2 6.2 16.4 6.2 22.6 0l97.4-97.4c6.2-6.2 6.2-16.4 0-22.6l-65.4-65.4c-6.2-6.2-16.4-6.2-22.6 0L99.3 324.7c-6.2 6.2-6.2 16.4 0 22.6z" />
+                        </svg>
+                    </div>
+                </div>
+                <br>
+
+                <h2 class="fw-normal text-center text-dark">Drinks</h2>
+                <!-- <p class="mr-2 ml-2 text-center">And lastly this, the third column of representative placeholder
+                    content.</p> -->
+
+            </a><!-- /.col-lg-4 -->
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center m-3">My top of favorites bar restaurants</h2>
+
+        <div class="mt-5 row d-flex g-0 justify-content-evenly">
+            <div class="card shadow col-sm-6 mt-3" style="width: 18rem;">
+                <img src="img/viva-rock.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Viva Rock</h5>
+                    <p class="card-text">It is a bar that is located in the center, quite accessible and for all kinds
+                        of people. <br>
+                        They play live music, where different bands of different genres attend.</p>
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <a href="https://www.facebook.com/VivaRockBar" class="btn mt-3"
+                        style="background: #f14523; border: none; color: #fff;">Visit website</a>
+                </div>
+            </div>
+
+            <div class="card shadow col-sm-6 mt-3" style="width: 18rem;">
+                <img src="img/mcCarthy's.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">McCarthy's</h5>
+                    <p class="card-text">It is a well-known restaurant bar with some recognition, which is attended by
+                        better-known local bands, they have good food. <br>
+                        It is worth mentioning that it is expensive.</p>
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <a href="http://www.mccarthyspub.com.mx/" class="btn mt-3"
+                        style="background: #f14523; border: none; color: #fff;">Visit website</a>
+                </div>
+            </div>
+
+            <div class="card shadow col-sm-4 mt-3" style="width: 18rem;">
+                <img src="img/jimenez.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Cervecería Jiménez</h5>
+                    <p class="card-text">It is a brewery where they also sell snacks, the theme is focused on sports,
+                        the prices are balanced. <br>
+                        This place has time and is almost always full of people.</p>
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </div>
+                    <a href="https://es-la.facebook.com/cerveceriajimenez/" class="btn mt-3"
+                        style="background: #f14523; border: none; color: #fff;">Visit website</a>
+                </div>
+            </div>
+
+            <div class="card shadow col-sm-4 mt-3" style="width: 18rem;">
+                <img src="img/mrbrown.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Mr. Brown</h5>
+                    <p class="card-text">It is a place where food is sold, it is very tasty and a very clean place. <br>
+                        It is important to mention that it is very expensive, but I think it is worth it, they also sell
+                        prepared drinks which gives it a touch. <br>
+                        In addition to being in one of the busiest squares..</p>
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </div>
+                    <a href="https://www.mrbrown.mx/" class="btn"
+                        style="background: #f14523; border: none; color: #fff;">Visit website</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!--    Menu -->
+        <div class="accordion p-5 mt-5" id="recipes">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Recipe #1 Potato wedges
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                                <img class="img-fluid"
+                                    src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/12/papas-al-horno-con-poca-grasa.jpg"
+                                    alt="image1">
+
+                            </div>
+                            <div class="col-sm-6">
+                                <p><b>Ingredients:</b></p>
+                                <p>
+                                    3 cups of water <br>
+                                    2 teaspoons of salt <br>
+                                    6 pieces of white potato <br>
+                                    4 tablespoons of extra virgin olive oil <br>
+                                    1 teaspoon of smoked salt <br>
+                                    1/2 teaspoon pepper <br>
+                                    4 cloves of mild garlic <br>
+                                    1 cup of jocoque with fine herbs <br>
+                                    1 teaspoon rosemary <br>
+                                    1 teaspoon of thyme <br>
+                                    1 teaspoon of oregano <br>
+                                    3 tablespoons whole milk <br>
+                                    2 tablespoons paprika <br>
+                                    1/4 teaspoon onion powder
+                                </p>
+
+                                <p><b>Process:</b></p>
+                                <p>
+                                    In a pot, bring the water to a boil, add the salt and the potatoes. Cook about 10
+                                    min.
+                                    to smooth it out a bit. chill.
+                                    Peel the potatoes and cut into medium wedges. Place them on a baking sheet and
+                                    mix with olive oil, paprika, smoked salt and pepper.
+                                    Bake for about 10 minutes at 180°C or until fully cooked and
+                                    soft. Flip from time to time during cooking.
+                                    For the dip, blend the remaining ingredients until smooth and
+                                    homogeneous. You can add more milk if necessary. Serve the potatoes with the dip.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Recipe #2 Crispy Buffalo Chicken Wings
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                                <img class="img-fluid"
+                                    src="https://www.kitchensanctuary.com/wp-content/uploads/2019/09/Buffalo-Wings-square-FS-55-500x500.jpg"
+                                    alt="imag2">
+                            </div>
+                            <div class="col-sm-6">
+                                <p><b>Ingredients</b></p>
+
+                                <p>CHICKEN WINGS
+
+                                    2 Kg (4 pounds) chicken wings cut into drumettes and flats
+                                    1 tablespoon aluminium free baking powder (NOT baking soda)
+                                    1/2 teaspoon salt
+                                    2 teaspoons garlic powder
+                                    Pinch of cracked pepper
+
+                                    BUFFALO SAUCE:
+
+                                    1/4 cup unsalted butter, melted
+                                    1/2 cup Frank's Original Red Hot Sauce
+                                    1-2 tablespoons honey, white sugar or brown sugar (adjust to suit your tastes)
+
+                                    BLUE CHEESE DIP:
+
+                                    1/2 cup crumbled blue cheese softened
+                                    1/3 cup sour cream
+                                    1/4 cup mayonnaise
+                                    2 cloves garlic minced
+                                    1 tablespoon lemon juice
+                                    Pinch of salt
+                                    Pinch of cracked black pepper</p>
+
+                                <p><b>Instructions</b></p>
+
+                                <p>1. Adjust oven rack to upper-middle position and preheat oven to 450°F (230°C). Line
+                                    a
+                                    rimmed baking sheet with aluminium foil and set a heat-proof wire rack inside. <br>
+                                    2. Pat dry chicken wings liberally with paper towels, squeezing out as much moisture
+                                    as
+                                    you can. Transfer them to a large bowl. <br>
+                                    3. In a small bowl, combine the baking powder, garlic powder, salt and pepper
+                                    together,
+                                    whisking well to combine, and sprinkle the mixture over the wings. Toss wings
+                                    through
+                                    the baking powder mixture until evenly coated. <br>
+                                    4. Arrange on rack, leaving about 1-inch of space between each wing. <br>
+                                    5. Bake for 30 minutes; flip and continue to cook until crisp and golden brown,
+                                    (about
+                                    20-30 minutes longer), until golden browned and crispy. <br>
+                                    6. While wings are cooking, whisk together hot sauce, butter and sugar. Toss wings
+                                    through
+                                    the sauce to evenly coat. <br>
+                                    7. Serve wings immediately with blue cheese dressing or ranch dressing, and celery
+                                    sticks.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Recipe #3 Tacos al pastor
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                                <img class="img-fluid"
+                                    src="https://www.comedera.com/wp-content/uploads/2017/08/tacos-al-pastor-receta.jpg"
+                                    alt="image3">
+                            </div>
+                            <div class="col-sm-6">
+                                <p><b>Ingredients</b></p>
+                                <p>5 lb boneless pork shoulder (2 kg) <br>
+                                    3 tablespoons achiote paste <br>
+                                    2 tablespoons guajillo chili powder <br>
+                                    1 tablespoon garlic powder <br>
+                                    1 tablespoon dried oregano <br>
+                                    1 tablespoon cumin <br>
+                                    1 tablespoon salt <br>
+                                    1 tablespoon pepper <br>
+                                    ¾ cup white vinegar (175 mL) <br>
+                                    1 cup pineapple juice (240 mL) <br>
+                                    1 pineapple, skinned and sliced into 1-inch (2 cm) rounds</p>
+
+                                <p><b>Preparation</b></p>
+
+                                <p>1. Slice the pork shoulder into about 1-centimeter (¼ in) slices, then transfer to a
+                                    large dish or bowl. In a medium bowl, combine the achiote paste, chili powder,
+                                    garlic powder, oregano, cumin, salt, pepper, vinegar, and pineapple juice, mashing
+                                    and stirring until smooth with no lumps. Pour the marinade over the pork slices,
+                                    then toss to make sure they are coated on all sides. Cover the bowl with plastic
+                                    wrap, then refrigerate for at least 2 hours or up to 3 days. <br>
+                                    2. Preheat the oven to 350°F (180°C). Line a baking sheet with parchment paper or
+                                    aluminum foil. <br>
+                                    3. Place a slice or two of the pineapple on the baking sheet. Take a wooden skewer
+                                    and
+                                    push it directly in the middle of the pineapple. Remove the pork from the fridge and
+                                    push the slices through the skewer, layering one after the other until there is a
+                                    1-inch (2 ½ cm) gap at the top. Push another pineapple slice on top. <br>
+                                    4. Bake for about 1½ hours, until the pork is slightly charred on the outside and
+                                    deep
+                                    red. Rest the meat for about 10 minutes, then carve off thin slices of pork and
+                                    roasted pineapple. <br>
+                                    5. To assemble, place some pork on the tortillas, followed by a few pieces of
+                                    pineapple, a sprinkling of onion, a pinch of cilantro, and a spoonful of salsa, and
+                                    some diced avocado. Serve with lime wedges.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <!-- Galeria -->
+        <h2 class="text-center">Some of my favorite drinks and desserts</h2>
+        <div class="row col-10 offset-1" id="drinks">
+            <div class="card_img col-6 col-sm-6 col-md-6 col-lg-4 mt-3">
+                <div style="padding: 5px;">
+                    <img src="https://www.buenbifetienda.com/2984-large_default/cervezas.jpg" width="100%">
+                </div>
+            </div>
+            <div class="card_img col-6 col-sm-6 col-md-6 col-lg-4 mt-3">
+                <div style="padding: 5px;">
+                    <img src="https://www.ceupe.com/images/easyblog_articles/3121/cerveza-artesanal.jpg" width="100%">
+                </div>
+            </div>
+            <div class="card_img col-6 col-sm-6 col-md-6 col-lg-4 mt-3">
+                <div style="padding: 5px;">
+                    <img src="img/bebidas.jpg" width="100%">
+                </div>
+            </div>
+            <div class="card_img col-6 col-sm-6 col-md-6 col-lg-4 mt-3">
+                <div style="padding: 5px;">
+                    <img src="https://koffeingram.hu/wp-content/uploads/2021/09/203969000_621855555883198_1142204735889892294_n.jpg" width="100%">
+                </div>
+            </div>
+            <div class="card_img col-6 col-sm-6 col-md-6 col-lg-4 mt-3">
+                <div style="padding: 5px;">
+                    <img src="img/vino.jpg" width="100%">
+                </div>
+            </div>
+            <div class="card_img col-6 col-sm-6 col-md-6 col-lg-4 mt-3">
+                <div style="padding: 5px;">
+                    <img src="img/licensed.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+        </br>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start  text-muted mt-5 text-light">
+        <!-- Copyright -->
+        <div class="text-center p-4 fondoBack text-light">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold text-decoration-none" href="index.html">Kevin López González</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>

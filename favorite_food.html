@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <title>My Favorite Food</title>
+    <style>
+        .card_food:hover {
+            box-shadow: 10px 10px 15px #dcdcdc,
+                -10px -10px 15px #bebebe;
+        }
+
+        .paginacion_color {
+            color: #f14523;
+        }
+
+        .backColor {
+            background: #f14523;
+        }
+
+        .breadcrumb {
+            background-color: transparent !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top backColor">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="index.html"><img src="img/Empresa.png" width="40%" height="50%"
+                    alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-dark navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="favorite_food.html">Favorite food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3 pt-1">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mt-5">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Favorite food</li>
+            </ol>
+        </nav>
+
+        <br>
+        <br>
+
+        <h2 class="text-center">My favorites food</h2>
+
+        <div class="mt-5 row d-flex g-0 justify-content-evenly">
+
+            <!--   Card hamburguesa -->
+            <div class="card_food mt-5" style="width: 18rem;">
+                <img class="card-img-top" src="img/hamburguesa.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <div class="p-3">
+                        <h3 class="card-title text-center">Hamburger</h3>
+                        <p class="card-text">To vary the daily menu, it is a good idea to make easy and delicious
+                            homemade
+                            burgers. With a delicious taste delight the palate of every member of the family.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#hambModal">
+                            Read...
+                        </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="hambModal" data-bs-backdrop="exampleModal" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Hamburger</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <img src="img/hamburguesa.jpg" class="img-fluid rounded" alt="...">
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-7 col-lg-6">
+                                            <h3>Ingredients:</h3>
+                                            <ul class="mr-5">
+                                                <li>Hamburger bun with sesame</li>
+                                                <li>Meat</li>
+                                                <li>Garlic powder, pepper (for meat) salt</li>
+                                                <li>Cheddar or Gouda</li>
+                                                <li>Lettuce</li>
+                                                <li>Large tomato</li>
+                                                <li>Onion (optional)</li>
+                                                <li>Pickles</li>
+                                                <li>Mayonnaise</li>
+                                                <li>Mustard</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3>How to prepare meat:</h3>
+                                    <p class="card-text">
+                                        In a bowl we place the meat, which will season with salt, garlic powder and
+                                        pepper to taste, leave in the refrigerator about 25 minutes before using.
+                                    </p>
+                                    <p class="card-text">
+                                        Last 25 minutes we will make balls with the meat carefully and we fry crushing
+                                        or will roast over low heat, until they are desired doneness.
+                                    </p>
+
+                                    <h3>How to prepare burger:</h3>
+                                    <p class="card-text">
+                                        Then we will warm the bread in the pan for a more delicious flavor, followed to
+                                        this will place the meat.
+                                    </p>
+                                    <p class="card-text">
+                                        Now we add a special sauce consisting of mayonnaise and mustard mix evenly, stir
+                                        to taste and place it above our flesh.
+                                    </p>
+                                    <p class="card-text">
+                                        The following will be put Gouda or cheddar cheese to taste, also add one or two
+                                        leaves of fresh lettuce (previously washed) and a slice of tomato, a slice of
+                                        onion and pickles.
+                                    </p>
+                                    <p class="card-text">
+                                        Finally add the top of the bread and we have our burger finished.
+                                    </p>
+                                    <p class="card-text">
+                                        Now comes the most important and fun part, eat! Repeat the process again and
+                                        again why make one, when you can make two or three?
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--   Card sandwich -->
+            <div class="card_food mt-5" style="width: 18rem;">
+                <img class="card-img-top" src="img/sandwich.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <div class="p-3">
+                        <h3 class="card-title text-center">Sandwich</h3>
+                        <p class="card-text"> A sandwich with cheese, tomato, lettuce and cucumber is a excellent idea
+                            to
+                            start the day, in it we can find a great variety of vitamins and proteins because is a very
+                            balanced breakfast.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#ModalSandwich">
+                            Read...
+                        </button>
+                    </div>
+
+                    <div class="modal fade" id="ModalSandwich" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Sandwich</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <img src="img/sandwich.jpg" class="img-fluid rounded" alt="...">
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-7 col-lg-6">
+                                            <h3>Ingredients:</h3>
+                                            <ul class="mr-5">
+                                                <li>One or two tomatoes sliced</li>
+                                                <li>Onion thinly sliced</li>
+                                                <li>A cucumber thinly sliced</li>
+                                                <li>White cheese sliced into strips</li>
+                                                <li>One teaspoon of vinegar or lemon juice</li>
+                                                <li>A pinch of salt</li>
+                                                <li>Loaf of bread</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3>Preparation:</h3>
+                                    <p class="card-text">
+                                        First we will to slice all the ingredients, in this case the ingredients are:
+                                        tomato, cheese, cucumber and if we want add onion but this is optional
+                                    </p>
+                                    <p class="card-text">
+                                        We should squeeze lemon and we go to use a teaspoon of its juice, if we prefer
+                                        we can use a teaspoon of vinegar.
+                                    </p>
+
+                                    <p class="card-text">
+                                        Above of the loaf lower part we will put one lettuce row, later we will put the
+                                        cheese and continue with the tomato about the cheese, if we want add cucumber
+                                        and onion we will do it about the tomato, immediately we pour the lemon juice
+                                        teaspoon or vinegar according to we preference, we will add a pinch of salt to
+                                        enhance the flavor, and we finish covering our sandwich with the loaf top.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--   Card pizza -->
+            <div class="card_food mt-5" style="width: 18rem;">
+                <img class="card-img-top" src="img/Pizza-pepperoni.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <div class="p-3">
+                        <h3 class="card-title text-center">Pepperoni pizza</h3>
+                        <p class="card-text">Pepperoni pizza originated in North America. It is a pizza with a base of
+                            tomato sauce, mozzarella and pepperoni.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#ModalPizza">
+                            Read...
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="ModalPizza" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Pepperoni pizza</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <img src="img/Pizza-pepperoni.jpg" class="img-fluid rounded" alt="...">
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-7 col-lg-6">
+                                            <h3>Ingredients:</h3>
+                                            <ul class="mr-5">
+                                                <li>100 gr. pepperoni</li>
+                                                <li>100 gr. of salami</li>
+                                                <li>200 gr. grated mozzarella cheese</li>
+                                                <li>1 can of crushed tomato</li>
+                                                <li>100 gr. grated Parmesan cheese</li>
+                                                <li>1 homemade pizza dough base</li>
+                                                <li>Salt</li>
+                                                <li>Pepper</li>
+                                                <li>Oregano</li>
+                                                <li>Basil (optional)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3>Preparation:</h3>
+                                    <p class="card-text">
+                                        First, Start by preparing the homemade sauce for your pepperoni pizza. Add olive
+                                        oil to a frying pan and when it is hot add the tomato with salt, pepper and
+                                        oregano to taste, if desired add some fresh basil leaves for more flavor.
+                                    </p>
+                                    <p class="card-text">
+                                        Stir and cook over very low heat until the sauce thickens. If the acidity of the
+                                        tomato stands out too much, correct it with a pinch of sugar. When the sauce is
+                                        almost ready, turn the oven on at 200 ºC.
+                                    </p>
+
+                                    <p class="card-text">
+                                        Roll out the homemade dough you have prepared and place it on the tray covered
+                                        with parchment paper. Prick the dough with a fork so that it does not rise. Then
+                                        cut the pepperoni and salami into thin slices.
+                                    </p>
+                                    <p class="card-text">
+                                        Cover the base with the sauce you have prepared and layer with grated mozzarella
+                                        cheese, pepperoni and salami slices. Top with Parmesan cheese to taste and bake
+                                        in the oven for 15 minutes or until perfectly browned.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--   Card alitas -->
+            <div class="card_food mt-5" style="width: 18rem;">
+                <img class="card-img-top" src="img/wings_bbq.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <div class="p-3">
+                        <h3 class="card-title text-center">Wings BBQ</h3>
+                        <p class="card-text">Baked chicken wings with homemade bbq sauce. Ready to prepare at any time
+                            of
+                            the day. Ideal for sharing with friends and family.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#ModalWings">
+                            Read...
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="ModalWings" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Wings BBQ</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <img src="img/wings_bbq.jpg" class="img-fluid rounded" alt="...">
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-7 col-lg-6">
+                                            <h3>Ingredients:</h3>
+                                            <ul class="mr-5">
+                                                <li>800 gr Chicken wings</li>
+                                                <li>1/2 teaspoon Salt</li>
+                                                <li>2 tablespoons Sugar</li>
+                                                <li>1/2 cup Water</li>
+                                                <li>1/4 cup Vinegar</li>
+                                                <li>1/2 cup Ketchup</li>
+                                                <li>1 tablespoon Worcestershire sauce</li>
+                                                <li>1/2 teaspoon Mustard</li>
+                                                <li>1 teaspoon Piquín chili powder</li>
+                                                <li>1 clove garlic, finely chopped</li>
+                                                <li>1/4 onion, finely chopped</li>
+                                                <li>60 gr Butter</li>
+                                                <li>1 pinch Pepper</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3>Preparation:</h3>
+                                    <p class="card-text">
+                                        Dissolve the salt and sugar in the water. Add vinegar, ketchup, Worcestershire
+                                        sauce, mustard and chili powder. Set aside.
+                                        Cook garlic and onion in butter.
+                                    </p>
+                                    <p class="card-text">
+                                        Add the sugar mixture, season with pepper and cook on the stove for 10 minutes.
+                                        Stir constantly to prevent sticking.
+                                    </p>
+
+                                    <p class="card-text">
+                                        Cool the sauce, mix with the wings and let stand for half an hour.
+                                    </p>
+                                    <p class="card-text">
+                                        Broil the wings for 15 minutes on the grill or until cooked.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--   Card Meatballs -->
+            <div class="card_food mt-5" style="width: 18rem;">
+                <img class="card-img-top" src="img/meatballs.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <div class="p-3">
+                        <h3 class="card-title text-center">Meatballs</h3>
+                        <p class="card-text">A meatball is a ball of minced meat, usually beef and sometimes fish, mixed
+                            with eggs and various seasonings, is a popular culinary preparation in different cuisines
+                            around
+                            the world.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#ModalMeatballs">
+                            Read...
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="ModalMeatballs" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Meatballs</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <img src="img/meatballs.jpg" class="img-fluid rounded" alt="...">
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-7 col-lg-6">
+                                            <h3>Ingredients:</h3>
+                                            <ul class="mr-5">
+                                                <li>2 cups tomato puree</li>
+                                                <li>1 chipotle chile</li>
+                                                <li>3 cups of water</li>
+                                                <li>2 cubes of Tomato Concentrate with Chicken </li>
+                                                <li>1 Tbsp Corn Oil</li>
+                                                <li>800 Grams of ground beef</li>
+                                                <li>100 Grams of chopped and fried Bacon</li>
+                                                <li>1 Egg</li>
+                                                <li>2 tablespoons Maggi Juice</li>
+                                                <li>1 tablespoon of English type Sauce</li>
+                                                <li>2 tablespoons of finely chopped onion</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3>Preparation:</h3>
+                                    <p class="card-text">
+                                        For the sauce, blend the tomato puree, chili, water and Tomato Concentrate with
+                                        Chicken. Heat the oil in a saucepan and cook the sauce over medium heat for 10
+                                        minutes.
+                                    </p>
+                                    <p class="card-text">
+                                        For the meatballs, mix the meat with the bacon, onion, egg, Maggi Juice and
+                                        Salsa Inglesa. Form the meatballs, place them in the sauce, cover and cook for
+                                        20 minutes over medium heat or until cooked.
+                                    </p>
+                                    <p class="card-text">
+                                        Serve the meatballs on a plate.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--   Card Morisqueta -->
+            <div class="card_food mt-5" style="width: 18rem;">
+                <img class="card-img-top" src="img/morisqueta.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <div class="p-3">
+                        <h3 class="card-title text-center">Morisqueta</h3>
+                        <p class="card-text">Stew made with white rice cooked in water with or without salt, similar in
+                            texture to steamed rice, as it is not fried. To accompany any dish or can be combined with
+                            beans
+                            and pork.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#ModalMorisqueta">
+                            Read...
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="ModalMorisqueta" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Morisqueta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <img src="img/morisqueta.jpg" class="img-fluid rounded" alt="...">
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-7 col-lg-6">
+                                            <h3>Ingredients:</h3>
+                                            <ul class="mr-5">
+                                                <li>1 1/2 Pork Backbone</li>
+                                                <li>2 Cups of Rice</li>
+                                                <li>15 Ancho Guajillo Chiles</li>
+                                                <li>4 cups of water</li>
+                                                <li>1 Onion</li>
+                                                <li>4 cloves of garlic</li>
+                                                <li>1/4 of green beans</li>
+                                                <li>6 Baby Carrots</li>
+                                                <li>Thyme and Marjoram</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3>Preparation:</h3>
+                                    <p class="card-text">
+                                        Slice the carrots in big pieces, and the green beans cut them in half.In a pot
+                                        with approximately four liters of water, add the backbone, carrots, green beans
+                                        and salt, and if there is another vegetable of your preference, you can also use
+                                        it.
+                                    </p>
+                                    <p class="card-text">
+                                        Place the pot of the spinazo with the vegetables on the stove and let it cook,
+                                        meanwhile wash the rice, remember that it is completely clean when the water
+                                        comes out transparent.When the rice is well washed place it in a pot with the
+                                        four cups of water, add the garlic and salt and let it cook until it is very
+                                        soft and the water is consumed.
+                                    </p>
+                                    <p class="card-text">
+                                        In the meantime, soak the Read...ded guajillo chiles in water, bring to a boil and
+                                        remove from the stove.
+                                    </p>
+                                    <p class="card-text">
+                                        Once the meat is well cooked, blend the guajillo chiles with half the onion and
+                                        two cloves of garlic, plus salt.
+                                        Add the blended chiles using a strainer. You can use the water where the chiles
+                                        were boiled to remove all the chiles from the blender cup.
+                                    </p>
+                                    <p class="card-text">
+                                        Then add the thyme and marjoram to the spinazo, let it boil for a few more
+                                        minutes so that all the flavors are incorporated, then remove the fat from the
+                                        broth.
+                                    </p>
+                                    <p class="card-text">
+                                        Finally, serve the spinazo broth with the morisqueta, you will love it.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <nav aria-label="Page navigation example" class="mt-3">
+            <ul class="pagination justify-content-end">
+                <li class="page-item paginacion_color">
+                    <a class="page-link paginacion_color" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item paginacion_color"><a class="page-link paginacion_color" href="#">1</a></li>
+                <li class="page-item paginacion_color"><a class="page-link paginacion_color" href="#">2</a></li>
+                <li class="page-item paginacion_color"><a class="page-link paginacion_color" href="#">3</a></li>
+                <li class="page-item paginacion_color">
+                    <a class="page-link paginacion_color" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+    <br>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start  text-muted mt-5 text-light">
+        <!-- Copyright -->
+        <div class="text-center p-4 backColor text-light">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold text-decoration-none" href="index.html">Kevin López González</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+</body>
+
+</html>
